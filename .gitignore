@@ -6,6 +6,7 @@ src/*
 build/
 dist/
 *.egg-info/
+.eggs/
 .idea/
 .cache/
 .pytest_cache/
@@ -19,3 +20,5 @@ doc/auto_examples
 
 # vim users
 .*.swp
+
+.venv/*
