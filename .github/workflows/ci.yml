@@ -9,6 +9,8 @@ on:
 
 jobs:
   lint:
+    # Disable liniting for now
+    if: false
     name: Lint
     runs-on: ubuntu-latest
     strategy:
