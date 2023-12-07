@@ -16,7 +16,7 @@ import skopt
 VERSION = skopt.__version__
 
 setup(
-    name='scikit-optimize',
+    name='ft-scikit-optimize',
     version=VERSION,
     description='Sequential model-based optimization toolbox.',
     long_description=open('README.rst').read(),

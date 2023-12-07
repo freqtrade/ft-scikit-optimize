@@ -7,23 +7,27 @@ jobs:
   build:
     uses: ./.github/workflows/ci.yml
 
-  package:
+  publish:
     needs: build
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
+    environment:
+      name: release
+      url: https://pypi.org/p/ft-scikit-optimize
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
           name: package
 
-      - name: Publish 📦 on PyPI
-        uses: pypa/gh-action-pypi-publish@master
+      - name: Publish 📦 on PyPI Test
+        uses: pypa/gh-action-pypi-publish@1.8.11
         with:
-          password: ${{ secrets.PYPI_API_TOKEN }}
+          repository-url: https://test.pypi.org/legacy/
+
 
   docs:
     needs: build
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         python-version: [ 3.11 ]
