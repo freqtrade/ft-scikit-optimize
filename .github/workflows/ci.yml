@@ -90,6 +90,8 @@ jobs:
           path: dist
 
   docs:
+    # Don't build docs for now.
+    if: false
     name: Docs
     runs-on: ubuntu-latest
     strategy:
