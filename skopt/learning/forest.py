@@ -196,7 +196,7 @@ class RandomForestRegressor(_sk_RandomForestRegressor):
     """
     def __init__(self, n_estimators=10, criterion='squared_error',
                  max_depth=None, min_samples_split=2, min_samples_leaf=1,
-                 min_weight_fraction_leaf=0.0, max_features='auto',
+                 min_weight_fraction_leaf=0.0, max_features=None,
                  max_leaf_nodes=None, min_impurity_decrease=0.,
                  bootstrap=True, oob_score=False,
                  n_jobs=1, random_state=None, verbose=0, warm_start=False,
@@ -392,7 +392,7 @@ class ExtraTreesRegressor(_sk_ExtraTreesRegressor):
     """
     def __init__(self, n_estimators=10, criterion='squared_error',
                  max_depth=None, min_samples_split=2, min_samples_leaf=1,
-                 min_weight_fraction_leaf=0.0, max_features='auto',
+                 min_weight_fraction_leaf=0.0, max_features=None,
                  max_leaf_nodes=None, min_impurity_decrease=0.,
                  bootstrap=False, oob_score=False,
                  n_jobs=1, random_state=None, verbose=0, warm_start=False,
