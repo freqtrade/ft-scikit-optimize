@@ -45,6 +45,7 @@ jobs:
     name: Test
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         # When bumping, note to revise env.TEST_WITH_COVERAGE below
         os: [ "ubuntu-20.04", "ubuntu-22.04", "macos-latest", "windows-latest" ]
