@@ -84,7 +84,7 @@ jobs:
           bash <(curl -s https://codecov.io/bash)
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: package
           path: dist
@@ -134,7 +134,7 @@ jobs:
           .github/scripts/build_docs.sh
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: docs
           path: doc/_build/html/stable
