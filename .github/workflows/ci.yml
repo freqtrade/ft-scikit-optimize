@@ -3,7 +3,7 @@ on:
   push:
     branches: [ master, main, ci/* ]
     tags: [ 'v[0-9]+\.[0-9]+.*' ]
-  pull_request: { branches: [master] }
+  pull_request: { branches: [master, main] }
   schedule: [ cron: '20 16 * * 6' ]
   workflow_call:
 
