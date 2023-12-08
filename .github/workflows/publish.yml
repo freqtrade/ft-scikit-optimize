@@ -13,11 +13,14 @@ jobs:
     environment:
       name: release
       url: https://pypi.org/p/ft-scikit-optimize
+    permissions:
+      id-token: write
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
           name: package
+          path: dist
 
       - name: Publish 📦 on PyPI Test
         uses: pypa/gh-action-pypi-publish@v1.8.11

@@ -83,7 +83,13 @@ jobs:
           make test-coverage
           bash <(curl -s https://codecov.io/bash)
 
-      - name: Upload artifact
+      - name: Build package 📦
+        if: env.TEST_WITH_COVERAGE == 'true'
+        run: |
+          pip install --upgrade build
+          python -m build --sdist --wheel --outdir dist/
+
+      - name: Upload artifact 📦
         uses: actions/upload-artifact@v3
         with:
           name: package
