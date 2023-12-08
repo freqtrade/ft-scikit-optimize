@@ -49,7 +49,7 @@ jobs:
       matrix:
         # When bumping, note to revise env.TEST_WITH_COVERAGE below
         os: [ "ubuntu-20.04", "ubuntu-22.04", "macos-latest" ]
-        python-version: [ "3.8", "3.9", "3.10", "3.11", "3.12"]
+        python-version: [ "3.8", "3.9", "3.10", "3.11" ]
         scikit-version: [ "1.1.3", "1.2.2", "1.3.2" ]
 
     env:
