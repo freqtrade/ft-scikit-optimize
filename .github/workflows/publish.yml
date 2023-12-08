@@ -20,15 +20,16 @@ jobs:
           name: package
 
       - name: Publish 📦 on PyPI Test
-        uses: pypa/gh-action-pypi-publish@1.8.11
+        uses: pypa/gh-action-pypi-publish@v1.8.11
         with:
           repository-url: https://test.pypi.org/legacy/
 
       - name: Publish 📦 on PyPI
-        uses: pypa/gh-action-pypi-publish@1.8.11
+        uses: pypa/gh-action-pypi-publish@v1.8.11
 
 
   docs:
+    if: false
     needs: build
     runs-on: ubuntu-22.04
     strategy:
