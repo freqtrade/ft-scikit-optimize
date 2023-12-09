@@ -22,7 +22,7 @@ setup(
     long_description=open('README.rst').read(),
     url='https://scikit-optimize.github.io/',
     license='BSD 3-clause',
-    author='The scikit-optimize contributors',
+    author='The scikit-optimize contributors, the Freqtrade Team',
     packages=find_packages(include=('skopt.*',),
                            exclude=('*.tests',)),
     # use_scm_version=True,
