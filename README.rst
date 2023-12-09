@@ -49,13 +49,13 @@ scikit-optimize requires
 You can install the latest release with:
 ::
 
-    pip install scikit-optimize
+    pip install ft-scikit-optimize
 
 This installs an essential version of scikit-optimize. To install scikit-optimize
 with plotting functionality, you can instead do:
 ::
 
-    pip install 'scikit-optimize[plots]'
+    pip install 'ft-scikit-optimize[plots]'
 
 This will install matplotlib along with scikit-optimize.
 
@@ -122,8 +122,8 @@ The development version can be installed through:
 
 ::
 
-    git clone https://github.com/scikit-optimize/scikit-optimize.git
-    cd scikit-optimize
+    git clone https://github.com/freqtrade/ft-scikit-optimize.git
+    cd ft-scikit-optimize
     pip install -e.
 
 Run all tests by executing ``pytest`` in the top level directory.
@@ -189,7 +189,7 @@ If your employer allows you to work on scikit-optimize during the day and would 
 recognition, feel free to add them to the "Made possible by" list.
 
 
-.. |pypi| image:: https://img.shields.io/pypi/v/scikit-optimize.svg
+.. |pypi| image:: https://img.shields.io/pypi/v/ft-scikit-optimize.svg
    :target: https://pypi.python.org/pypi/scikit-optimize
 .. |conda| image:: https://anaconda.org/conda-forge/scikit-optimize/badges/version.svg
    :target: https://anaconda.org/conda-forge/scikit-optimize
