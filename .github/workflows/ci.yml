@@ -90,7 +90,7 @@ jobs:
           python -m build --sdist --wheel --outdir dist/
 
       - name: Upload artifact 📦
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: package
           path: dist
@@ -140,7 +140,7 @@ jobs:
           .github/scripts/build_docs.sh
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: docs
           path: doc/_build/html/stable
